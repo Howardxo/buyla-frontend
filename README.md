@@ -1,3 +1,24 @@
+# BuyLa買啦
+
+## 專案簡介
+
+BuyLa 是一個方便購物的網路平台
+
+---
+
+## 網站架構
+
+1. 前端 (Vue)
+- 使用者登入、會員個人資訊
+- 後台管理(帳號管理、商品管理)
+
+2. 後端 (SpringBoot)
+- 新增、刪除功能
+- JWT Security
+- Restful API
+
+---
+
 ## 常用 Commit 類型說明
 
 | 類型        | 說明                                      | 示例                                         |
@@ -16,5 +37,9 @@
 | `revert`    | 撤銷之前的提交                            | `revert: revert "fix: update login logic"`   |
 
 ---
+
+## 環境要求
+- Windows、Mac、Linux 系統電腦
+- Google Chrome、Firefox、Safari等瀏覽器
 
 
