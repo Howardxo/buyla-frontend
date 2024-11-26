@@ -1,10 +1,17 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <HomeView />
 </template>
+
+<script>
+import HomeView from './views/HomeView.vue'; // 確保正確導入 HomeView
+
+export default {
+  name: 'App',
+  components: {
+    HomeView,
+  },
+};
+</script>
 
 <style lang="scss">
 #app {
@@ -15,16 +22,14 @@
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* 避免元素邊框和內邊距影響大小計算 */
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+body {
+  margin: 0;
 }
 </style>
